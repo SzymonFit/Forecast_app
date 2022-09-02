@@ -39,11 +39,12 @@ def search():
 
 canvas = Tk()
 canvas.geometry("500x400")
+canvas.configure(bg='skyblue')
 canvas.title("Weather")
 
 city = StringVar()
 
-enter_city_label = Label(canvas, text="Enter city name", font='bold')
+enter_city_label = Label(canvas, text="Enter city name", font='bold', bg='skyblue')
 enter_city_label.pack()
 
 search_city = Entry(canvas, textvariable=city)
@@ -52,28 +53,28 @@ search_city.pack()
 search_button = Button(canvas, text= "Search", width=10, command=search)
 search_button.pack()
 
-city_label = Label(canvas, text="City: ", font="bold")
+city_label = Label(canvas, text="City: ", font="bold", bg='skyblue')
 city_label.pack()
 
-country_label = Label(canvas, text='Country: ', font="bold")
+country_label = Label(canvas, text='Country: ', font="bold", bg='skyblue')
 country_label.pack()
 
-weather_conditions_label=Label(canvas, text="Weather conditions: ", font='bold')
+weather_conditions_label=Label(canvas, text="Weather conditions: ", font='bold', bg='skyblue')
 weather_conditions_label.pack()
 
-temperature_label = Label(canvas, text="Temperature:  (°C)", font="bold")
+temperature_label = Label(canvas, text="Temperature:  (°C)", font="bold", bg='skyblue')
 temperature_label.pack()
 
-felt_temperature_label = Label(canvas, text="Felt temperature: (°C)", font='bold')
+felt_temperature_label = Label(canvas, text="Felt temperature: (°C)", font='bold', bg='skyblue')
 felt_temperature_label.pack()
 
-pressure_label = Label(canvas, text="Pressure: (hPa)", font="bold")
+pressure_label = Label(canvas, text="Pressure: (hPa)", font="bold", bg='skyblue')
 pressure_label.pack()
 
-humidity_label = Label(canvas, text='Humidity: (%)', font='bold')
+humidity_label = Label(canvas, text='Humidity: (%)', font='bold', bg='skyblue')
 humidity_label.pack()
 
-wind_speed_label = Label(canvas, text='Wind speed: (m/s)', font='bold')
+wind_speed_label = Label(canvas, text='Wind speed: (m/s)', font='bold', bg='skyblue')
 wind_speed_label.pack()
 
 canvas.mainloop()
